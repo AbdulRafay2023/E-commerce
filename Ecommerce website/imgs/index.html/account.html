@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop|E-Commerce Website Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="products.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div >
+                <a href="admin.html"><img src="imgs/menu.png" width="15px" height="15px" alt="" ></a>
+                <img class="logo" src="imgs/ee.jpg" width="5px" height="5px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="e-commerce.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">Account</a></li>
+                </ul>
+            </nav>
+            <img src="imgs/cart.png" width="30px" height="30px">
+            <img src="imgs/menu.png" alt="" class="menu-icon">
+            <img src="" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+    
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="imgs/image1.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="Login()">Login</span>
+                            <span onclick="Register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <Form id="Loginform">
+                            <input type="text" placeholder="username" >
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="/">Forget Password</a>
+                        </Form>
+
+                        <Form id="Regform">
+                            <input type="text" placeholder="username" >
+                            <input type="Email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                            
+                        </Form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <div class="footer">
+    <div class="contanier">
+        <div class="row">
+            <div class="footer--col-1">
+                <h3>Download Our APP</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="imgs/play-store.png" >
+                    <img src="imgs/app-store.png">
+                </div>
+            </div>
+            <div class="footer--col-2">
+                <img src="imgs/logo-white.png" >
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits <br> Of Accessible to the Many.</p>
+            </div>
+            <div class="footer--col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer--col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2020-Easy Turtorials</p>
+    </div>
+ </div>
+ 
+ <script>
+    var MenuItems = document.getElementById("MenuIteam");
+    MenuItems.style.maxHeight = "0px"
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+        
+    
+ </script>
+</body>
+</html>
